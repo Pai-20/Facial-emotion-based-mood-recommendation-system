@@ -1,94 +1,48 @@
-# Facial-emotion-based-mood-recommendation-system
+Aura Tunes : AI driven mood melodies 
+A Flask-based web that detects emotions from live feed and suggests Spotify playlists based on your mood.
 
-1. Introduction
-   
-This paper examines a facial emotion-based music recommendation system that personalizes music 
-suggestions by analyzing listeners' facial expressions in real-time. It explores the technology 
-behind this system, its potential benefits, and the challenges it faces, particularly concerning ethical 
-and privacy issues.
-By integrating facial recognition with music streaming, the system aims to enhance emotional 
-engagement in music experiences and has applications in healthcare, education, and entertainment. 
-The research will review existing studies, analyze relevant algorithms, and conduct empirical 
-assessments to evaluate effectiveness, ultimately contributing to the advancement of this innovative 
-technology.
+1)Features:
+- 📷 Real-time emotion detection using **DeepFace** and **OpenCV**.
+- 🎵 Spotify playlist recommendations tailored to your mood.
+- 🌐 Front-end interface for capturing images and redirecting to Spotify playlists.
+  
+2)Preview
+![git](https://github.com/user-attachments/assets/463c72fe-73cc-4263-9a81-7fd7e68a3e72)
 
-2. Feasibility study
-   
-I. Feasibility
+3)Requirements
+        - Python 3.8+
+        - OpenCV
+        - DeepFace
+        -NumPy
+        -Matplotlib
 
-1) Technical Feasibility:
-   
-• Facial Emotion Detection:Uses computer vision for real-time expression analysis.
-• Music Recommendation System:Implements collaborative and content-based filtering, 
-with deep learning for emotion-based audio preferences.
-• Integration:Connects emotional data to music libraries via APIs (e.g., TensorFlow, 
-OpenCV, Spotify API).
+4)How It Works:
+     a. The user accesses the weblink and captures their image via webcam.
+     b. The image is sent to the backend for emotion detection using **DeepFace**.
+     c. Based on the detected emotion,the link gets redirects the user to a corresponding Spotify playlist.
 
-2) Economic Feasibility:
+5)Emotion-to-Playlist Mapping:
+| Emotion   | Playlist |
+|-----------|----------|
+| *Happy* | [Spotify Happy Playlist](https://open.spotify.com/playlist/5ACAHVlMPRrgnnZ8temmIh?si=LlvE8RZfS92RY-fUbqAX_g) |
+| *Sad*   | [Spotify Sad Playlist](https://open.spotify.com/playlist/0RkK2ZAXWD5HEmCJZ00i1G?si=Aa_r-9rwSZuxa1ji7z51Jw) |
+| *Angry* | [Spotify Angry Playlist](https://open.spotify.com/playlist/5cwtgqs4L1fX8IKoQebfjJ?si=E4KoOSw1T3ShHyIhV4CabA) |
+| *Surprise* | [Spotify Surprise Playlist](https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik?si=mxgDHP14RSCGMsNSLbwTNA) |
+| *Neutral* | [Spotify Neutral Playlist](https://open.spotify.com/playlist/4nqbYFYZOCospBb4miwHWy?si=2S0YqR26RJSRrmwKcvsjlQ) |
+| *Fear* | [Spotify Fear Playlist](https://open.spotify.com/playlist/37i9dQZF1DXdpQPPZq3F7n?si=U-J5VJM6QbaWiDP9nExwnA) |
 
-Costs include hardware (webcam/smartphone), cloud processing, 
-development expertise, and ongoing maintenance. Low hardware costs enhance viability.
-3) Operational Feasibility:
 
-Features a user-friendly app interface, real-time analysis, and minimal 
-hardware requirements, ensuring easy integration with platforms like Spotify and YouTube 
-Music.
+Contributing:-
+Contributions are welcome! Feel free to:
+- Open issues for bugs or feature requests.
+- Submit pull requests to enhance the project.
 
-II. Need
-1) The music industry is increasingly focused on personalized experiences, but current systems 
-don’t capture emotional states.
-2) Current Systems: Rely on data like listening history or genre preferences, but do not always 
-reflect real-time emotions.
-3) Emotion-driven Recommendations: Offer a deeper level of personalization by tailoring music 
-to match or shift emotional states.
-III. Significance
-1) Enhanced User Experience:Personalized mood-based music can improve emotional wellbeing.
-2) Market Differentiation:Streaming platforms can attract users with advanced personalization.
-3) Mental Health Applications:The system may help manage emotions and reduce stress or 
-anxiety through tailored recommendations.
+*License*
+This project is licensed under the MIT License.
 
-Objectives and Steps involved
-1. Facial Emotion Detection
-• Objective: Identify emotions.
-• Steps: Use FER2013 dataset.
-2. Emotion-Music Mapping
-• Objective: Link emotions to music.
-• Steps: Define mappings (e.g., Happy → Upbeat).
-3. Music Recommendation System
-• Objective: Provide real-time suggestions.
-• Steps: Curate a music library.
-4. Feedback
-• Objective: Improve recommendations.
-• Steps: Allow user ratings to refine suggestions.
+*Contact*
+- Author: [Harshitha D Pai](https://github.com/your-Pai-20)
+- Email: harshithapai2017@gmail.com
 
-Facilities required
-1) Hardware Requirements
-• WebCamera
- Purpose: Capture facial images.
- Types: Webcams, smartphone cameras, optional high-resolution cameras.
-2) Software Requirements
-• Operating System:Windows
-• Emotion Detection Tools:OpenCV, Dlib, TensorFlow, PyTorch.
-• Music Recommendation Engine:Spotify API.
 
-Dataset
- Image Size: 48x48 grayscale.
- Emotion Categories: Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral.
- 
-Bibliography
-1. Anagha S.Dhavalikar and Dr. R. K. Kulkarni, “Face Detection and Facial Expression 
-Recognition System” 2014 Interntional Conference on Electronics and 
-CommunicationSystem (ICECS -2014)
-2. Arto Lehtiniemi and Jukka Holm, “Using Animated Mood Pictures in Music 
-Recommendation”, 2012 16th International Conference on Information Visualisation.
-3. F. Abdat, C. Maaoui and A. Pruski, “Humancomputer interaction using emotion 
-recognition from facial expression”, 2011 UKSim 5th European Symposium on Computer
-4. T.-H. Wang and J.-J.J. Lien, “Facial Expression Recognition System Based on Rigid and 
-Non-Rigid Motion Separation and 3D PoseEstimation,” J. Pattern Recognition, vol. 42, no. 
-5, pp. 962-977, 2009.
-5. Renuka R. Londhe, Dr. Vrushshen P. Pawar, “Analysis of Facial Expression and 
-Recognition Based On Statistical Approach”, International Journal of Soft Computing and 
-Engineering (IJSCE) Volume-2, May 2012.
-6. Anukriti Dureha “An Accurate Algorithm for Generating a Music Playlist based on Facial 
-Expressions”3]. Arto Lehtiniemi and Jukka Holm, “Using Animated Mood Pictures in 
-Music Recommendation”, 2012 16th International Conference on Information Visualisation
+Let me know if you'd like help writing any specific sections or improving the structure! 😊
